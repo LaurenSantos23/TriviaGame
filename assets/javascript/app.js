@@ -1,4 +1,6 @@
-var test = 1111
+//Trivia Game Javascript 
+
+
 
 
 
