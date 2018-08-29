@@ -35,7 +35,7 @@ body{
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-.styled-restart {
+.styled-submit {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -53,11 +53,11 @@ body{
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.styled-restart:hover {
+.styled-submit:hover {
     background-color: rgb(228, 9, 137);
 }
 
-.styled-restart:active {
+.styled-submit:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }

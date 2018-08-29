@@ -1,5 +1,16 @@
 //Trivia Game Javascript 
 
+//jquery making the start button say something, have to make it start the timer
+$(document).ready(function() {
+
+
+    $(".styled-start").on("click", function() {
+      alert("I've been clicked!");
+    });
+
+  });
+
+
 //Have start button begin countdown (120 seconds) on click function (document.onkeyup)reference function
 
 //Make variables for questions, answers and indicate correct answer (are these arrays??) objects
@@ -14,9 +25,9 @@
 
 
 
-$("h2").on("click", function(event){
+//$("h2").on("click", function(event){
     
-})
+//})
 
 
 
