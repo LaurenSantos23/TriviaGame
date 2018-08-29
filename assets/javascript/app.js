@@ -2,18 +2,43 @@
 
 //jquery making the start button say something, have to make it start the timer
 $(document).ready(function() {
+  var counter = 120
+  var timer 
+  var myQuestions
+  var correct = 0
+  var incorrect = 0
+
+  function countDown() {
+   // counter = counter -1;//
+    counter--;
+    $("#counterNumber").html(counter);
+  // Your code here
+}
 
 
     $(".styled-start").on("click", function() {
-      alert("I've been clicked!");
-    });
+     timer = window.setInterval(countDown, 1000);
 
+    
+    });
+    $(".styled-submit").on("click", function(){
+      clearInterval(timer)
+      var question0Answer = $("input[name='question-0']:checked").val()
+     // myQuestions.question0.correctAnswer//
+     if question0Answer === myQuestions.question0.correctAnswer //this means answer is right, increase correct score or incorrect score ++
+      
+      console.log(question0Answer)
+    })    ;
   });
 
 
 //Have start button begin countdown (120 seconds) on click function (document.onkeyup)reference function
 
 //Make variables for questions, answers and indicate correct answer (are these arrays??) objects
+ myQuestions = {question0: {correctAnswer: "Trees"}, question1: {correctAnswer: "Dogs"}}  
+
+
+
 
 //Keep track of number of correct/incorrect answers for player
 
