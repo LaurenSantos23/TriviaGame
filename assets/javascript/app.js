@@ -1,7 +1,5 @@
 //Trivia Game Javascript 
 
-//jquery making the start button say something, have to make it start the timer
-
 //Restart button should reload page and restart countdown (on click event)
 $(document).ready(function() {
   var counter = 120
