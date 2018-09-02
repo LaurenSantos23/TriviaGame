@@ -31,11 +31,6 @@ $(document).ready(function() {
 
 //Keep track of number of correct/incorrect answers for player
 
-$(wrongAnswers).on("click", function() {
-    
-});
-
- 
 
   function countDown() {
    // counter = counter -1;//
@@ -43,7 +38,6 @@ $(wrongAnswers).on("click", function() {
     $("#counterNumber").html(counter);
  
 }
-
 
     $(".styled-start").on("click", function() {
      timer = window.setInterval(countDown, 1000);
@@ -60,9 +54,18 @@ $(wrongAnswers).on("click", function() {
       }
     })    ;
   });
-
 /*Show player how many correct/incorrect answers they had 
-I want to change the color of the answers to red/incorrect and green/ correct after submit button is pressed
+I want to change the color of the answers to red/incorrect and green/correct after submit button is pressed
 Maybe do a strikethrough of the incorrect answers too
-(should this be a getElementById? I took all the id values out for my radio buttons for some reason.)
+(should this be a getElementById? I took all the id values out for my radio buttons for some reason.)*/
 
+//$(wrongAnswers).on("click", function() {//
+
+/*
+  function changeColor() {
+    var wrongAnswers = [""];
+    var result = str.fontcolor("red");
+    document.getElementById("quiz-area").innerHTML = result;
+}
+    
+}); */
