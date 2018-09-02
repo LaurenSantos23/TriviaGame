@@ -4,13 +4,21 @@
 $(document).ready(function() {
   var counter = 120
   var timer 
+  var wrongAnswers = ["Dandruff","Sunlight","Dentists","Chicken","Sheep",
+                      "Lizards","Ophidiophia","Mysophobia","Arachnophobia",
+                      "Excercise","Violins","Driving","Aaron Beck",
+                      "Carl Jung","Carl Rogers","Philosophy","Wool Socks",
+                      "Chewing Noises","Ombrophobia","Somniphobia","Turophobia",
+                      "Gnomes","Ketchup","Cotton Fabric","10 seconds","8 seconds",
+                      "15 seconds","Tax Season","Pogo Sticks","Vaccinations"]
   var myQuestions = {
     question0: "Trees",
     question1: "Dogs", 
     question2: "Coulrophobia",
     question3: "Nudity",
     question4: "Sigmund Freud",
-    question5: "Papaphobia", 
+    question5: "Parents-in-laws",
+    question6: "Papaphobia", 
     question7: "No Mobile Phone Coverage",
     question8: "4 seconds",
     question9: "Beards",
@@ -20,6 +28,14 @@ $(document).ready(function() {
 //Have start button begin countdown (120 seconds) on click function (document.onkeyup)reference function
 
 // Player has 120 seconds to play the game
+
+//Keep track of number of correct/incorrect answers for player
+
+$(wrongAnswers).on("click", function() {
+    
+});
+
+ 
 
   function countDown() {
    // counter = counter -1;//
@@ -31,7 +47,7 @@ $(document).ready(function() {
 
     $(".styled-start").on("click", function() {
      timer = window.setInterval(countDown, 1000);
-
+      
     
     });
     $(".styled-submit").on("click", function(){
@@ -45,13 +61,8 @@ $(document).ready(function() {
     })    ;
   });
 
-
-//Keep track of number of correct/incorrect answers for player
-
-
-//Show player how many correct/incorrect answers they had
-
-
-
-
+/*Show player how many correct/incorrect answers they had 
+I want to change the color of the answers to red/incorrect and green/ correct after submit button is pressed
+Maybe do a strikethrough of the incorrect answers too
+(should this be a getElementById? I took all the id values out for my radio buttons for some reason.)
 
