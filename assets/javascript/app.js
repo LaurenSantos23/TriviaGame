@@ -31,6 +31,12 @@ $(document).ready(function() {
 
 //Keep track of number of correct/incorrect answers for player
 
+//disable radio input buttons upon clicking, not working but I'm trying to figure it out!
+
+ /* $(".question0 input.radio").on("click", function(){
+    $(".question0 input.radio").not(this).prop("disabled", true);
+  }); */
+
 
   function countDown() {
    // counter = counter -1;//
