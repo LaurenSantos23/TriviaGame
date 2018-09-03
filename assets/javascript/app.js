@@ -33,10 +33,13 @@ $(document).ready(function() {
 
 //disable radio input buttons upon clicking, not working but I'm trying to figure it out!
 
- /* $(".question0 input.radio").on("click", function(){
-    $(".question0 input.radio").not(this).prop("disabled", true);
-  }); */
+  $(".question0").on("click", function(){
+    $(".question0").not(this).prop("disabled", true);
+  }); 
 
+ /* var wrongAnswers = document.getElementById({[""]);
+   
+  wrongAnswers.classList.add("greenstyle");*/
 
   function countDown() {
    // counter = counter -1;//
@@ -65,13 +68,8 @@ I want to change the color of the answers to red/incorrect and green/correct aft
 Maybe do a strikethrough of the incorrect answers too
 (should this be a getElementById? I took all the id values out for my radio buttons for some reason.)*/
 
-//$(wrongAnswers).on("click", function() {//
+ 
 
-/*
-  function changeColor() {
-    var wrongAnswers = [""];
-    var result = str.fontcolor("red");
-    document.getElementById("quiz-area").innerHTML = result;
-}
-    
-}); */
+
+ 
+
