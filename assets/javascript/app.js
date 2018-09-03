@@ -25,11 +25,8 @@ $(document).ready(function() {
   }  
   var correct = 0
   var incorrect = 0
-//Have start button begin countdown (120 seconds) on click function (document.onkeyup)reference function
 
 // Player has 120 seconds to play the game
-
-//Keep track of number of correct/incorrect answers for player
 
 //disable radio input buttons upon clicking, not working but I'm trying to figure it out!
 
@@ -37,9 +34,9 @@ $(document).ready(function() {
     $(".question0").not(this).prop("disabled", true);
   }); 
 
- /* var wrongAnswers = document.getElementById({[""]);
+ /*var wrongAnswers = document.getElementById({[""]);
    
-  wrongAnswers.classList.add("greenstyle");*/
+  wrongAnswers.classList.add("greenstyle")*/
 
   function countDown() {
    // counter = counter -1;//
@@ -63,8 +60,8 @@ $(document).ready(function() {
       }
     })    ;
   });
-/*Show player how many correct/incorrect answers they had 
-I want to change the color of the answers to red/incorrect and green/correct after submit button is pressed
+  
+/* I want to change the color of the answers to red/incorrect and green/correct after submit button is pressed
 Maybe do a strikethrough of the incorrect answers too
 (should this be a getElementById? I took all the id values out for my radio buttons for some reason.)*/
 
