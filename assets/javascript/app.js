@@ -4,7 +4,7 @@
 $(document).ready(function() {
   var counter = 120
   var timer 
-  var wrongAnswers = ["Dandruff","Sunlight","Dentists","Chicken","Sheep",
+  var wrongAnswers = ["Dandruff","Sunlight","Dentists","Chickens","Sheep",
                       "Lizards","Ophidiophia","Mysophobia","Arachnophobia",
                       "Excercise","Violins","Driving","Aaron Beck",
                       "Carl Jung","Carl Rogers","Philosophy","Wool Socks",
@@ -52,15 +52,111 @@ $(document).ready(function() {
     });
     $(".styled-submit").on("click", function(){
       clearInterval(timer)
-      var question0Answer = $("input[name='question-0']:checked").val()
-      myQuestions.question0.correctAnswer//
-      if (question0Answer === myQuestions.question0) {//this means answer is right, increase correct score or incorrect score ++
+      // loop through all of the quesiton zero answers and check if answer is in wrong answers array and make it red
+      $("input[name='question-0']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
 
-        console.log(question0Answer)
-      }
+      })
+      $("input[name='question-1']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
+
+      })
+      $("input[name='question-2']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
+
+      })
+      $("input[name='question-3']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
+
+      })
+      $("input[name='question-4']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
+
+      })
+      $("input[name='question-5']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
+
+      })
+      $("input[name='question-6']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
+
+      })
+      $("input[name='question-7']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
+
+      })
+      $("input[name='question-8']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
+
+      })
+      $("input[name='question-9']").each(function(){
+        var answer = $(this)
+        if( wrongAnswers.includes(answer.val())){
+         answer.closest("label").css({color: "red"})  
+      
+        } else {
+         answer.closest("label").css({color: "green"})
+        } 
+
+      })
+     
     })    ;
   });
-  
+
 /* I want to change the color of the answers to red/incorrect and green/correct after submit button is pressed
 Maybe do a strikethrough of the incorrect answers too
 (should this be a getElementById? I took all the id values out for my radio buttons for some reason.)*/
