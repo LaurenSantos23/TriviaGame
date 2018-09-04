@@ -28,12 +28,47 @@ $(document).ready(function() {
 
 // Player has 120 seconds to play the game
 
-//disable radio input buttons upon clicking, not working but I'm trying to figure it out!
+//disable radio input buttons upon clicking, it's working!!!
 
-  /*$(".styled-submit").on("click", function(){
-    $(".question0").not(this).prop("disabled", true);
-  }); */
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-0']:not(:checked)").attr("disabled", true);
+  }); 
 
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-1']:not(:checked)").attr("disabled", true);
+  }); 
+
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-2']:not(:checked)").attr("disabled", true);
+  }); 
+
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-3']:not(:checked)").attr("disabled", true);
+  }); 
+
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-4']:not(:checked)").attr("disabled", true);
+  }); 
+
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-5']:not(:checked)").attr("disabled", true);
+  });
+
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-6']:not(:checked)").attr("disabled", true);
+  }); 
+
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-7']:not(:checked)").attr("disabled", true);
+  }); 
+
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-8']:not(:checked)").attr("disabled", true);
+  }); 
+
+  $(".styled-submit").on("click", function(){
+    $(":radio[name='question-9']:not(:checked)").attr("disabled", true);
+  }); 
 
   function countDown() {
    // counter = counter -1;//
