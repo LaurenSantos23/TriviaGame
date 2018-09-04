@@ -5,7 +5,7 @@ $(document).ready(function() {
   var counter = 120
   var timer 
   var wrongAnswers = ["Dandruff","Sunlight","Dentists","Chickens","Sheep",
-                      "Lizards","Ophidiophia","Mysophobia","Arachnophobia",
+                      "Lizards","Ophidiophobia","Mysophobia","Arachnophobia",
                       "Excercise","Violins","Driving","Aaron Beck",
                       "Carl Jung","Carl Rogers","Philosophy","Wool Socks",
                       "Chewing Noises","Ombrophobia","Somniphobia","Turophobia",
@@ -30,13 +30,10 @@ $(document).ready(function() {
 
 //disable radio input buttons upon clicking, not working but I'm trying to figure it out!
 
-  $(".question0").on("click", function(){
+ /* $(".question0").on("click", function(){
     $(".question0").not(this).prop("disabled", true);
-  }); 
+  }); */
 
- /*var wrongAnswers = document.getElementById({[""]);
-   
-  wrongAnswers.classList.add("greenstyle")*/
 
   function countDown() {
    // counter = counter -1;//
@@ -52,7 +49,7 @@ $(document).ready(function() {
     });
     $(".styled-submit").on("click", function(){
       clearInterval(timer)
-      // loop through all of the quesiton zero answers and check if answer is in wrong answers array and make it red
+      // loop through all of the quesiton zero answers and check if answer is in wrong answers array and make it red or else make the word green
       $("input[name='question-0']").each(function(){
         var answer = $(this)
         if( wrongAnswers.includes(answer.val())){
@@ -157,9 +154,7 @@ $(document).ready(function() {
     })    ;
   });
 
-/* I want to change the color of the answers to red/incorrect and green/correct after submit button is pressed
-Maybe do a strikethrough of the incorrect answers too
-(should this be a getElementById? I took all the id values out for my radio buttons for some reason.)*/
+
 
  
 
