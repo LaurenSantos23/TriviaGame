@@ -30,7 +30,7 @@ $(document).ready(function() {
 
 //disable radio input buttons upon clicking, not working but I'm trying to figure it out!
 
- /* $(".question0").on("click", function(){
+  /*$(".styled-submit").on("click", function(){
     $(".question0").not(this).prop("disabled", true);
   }); */
 
@@ -49,6 +49,8 @@ $(document).ready(function() {
     });
     $(".styled-submit").on("click", function(){
       clearInterval(timer)
+
+
       // loop through all of the quesiton zero answers and check if answer is in wrong answers array and make it red or else make the word green
       $("input[name='question-0']").each(function(){
         var answer = $(this)
